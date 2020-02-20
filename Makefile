@@ -57,7 +57,7 @@ ifeq ($(BACKEND_MEMCACHED),yes)
 	BACKENDS += -DBE_MEMCACHED
 	BACKENDSTR += Memcached
 
-	BE_CFLAGS += -I/usr/local/include/libmemcached
+	BE_CFLAGS += -I/usr/local/include
 	BE_LDFLAGS += -L/usr/local/lib
 	BE_LDADD += -lmemcached
 	OBJS += be-memcached.o
